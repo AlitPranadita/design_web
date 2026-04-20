@@ -861,3 +861,138 @@ h6 {
   transition: 0.3s;
   color: #fff;
 }
+
+/* =========================
+   RESPONSIVE FIX MOBILE
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  h1 {
+    font-size: 32px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* spacing lebih rapat */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* hero */
+  #hero {
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  #hero h2 {
+    font-size: 26px;
+  }
+
+  #hero p {
+    width: 100%;
+  }
+}
+
+/* Mobile (HP) */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  #header {
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 20px !important;
+  }
+
+  /* SECTION TITLE */
+  h1 {
+    font-size: 26px !important;
+    margin-top: 100px !important;
+  }
+
+  /* GRID jadi 1 kolom */
+  .row {
+    flex-direction: column;
+  }
+
+  .col,
+  .col-sm-3 {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  /* CARD */
+  .card {
+    width: 100% !important;
+  }
+
+  /* CAROUSEL IMAGE */
+  .carousel img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* TEXT CONTENT */
+  div[style*="padding: 65px"] {
+    padding: 20px !important;
+  }
+
+  /* BUTTON */
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* FORM (contact & accommodation) */
+  .form,
+  .hub {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100% !important;
+  }
+}
+
+/* Extra small (iPhone kecil) */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 22px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  #hero h2 {
+    font-size: 22px;
+  }
+
+  #hero p {
+    font-size: 13px;
+  }
+}
+

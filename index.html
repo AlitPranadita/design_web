@@ -222,3 +222,26 @@
     <script src="assets/bootstrap/jquery-3.6.1.min.js"></script>
   </body>
 </html>
+
+
+<script>
+  const toggle = document.querySelector('.mobile-nav-toggle');
+  const navbar = document.querySelector('#navbar');
+
+  toggle.addEventListener('click', function() {
+    navbar.classList.toggle('navbar-mobile');
+
+    this.classList.toggle('bi-list');
+    this.classList.toggle('bi-x');
+  });
+
+  // dropdown mobile
+  document.querySelectorAll('.navbar .dropdown > a').forEach(el => {
+    el.addEventListener('click', function(e) {
+      if (navbar.classList.contains('navbar-mobile')) {
+        e.preventDefault();
+        this.nextElementSibling.classList.toggle('dropdown-active');
+      }
+    });
+  });
+</script>
